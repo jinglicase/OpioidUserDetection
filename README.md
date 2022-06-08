@@ -52,3 +52,6 @@ You can generate your own data as a CSV file. The column names are "student1", "
 "keywords" represents the words appeared both in the posts and the paper "Drug Slang Code Words". The ormat of "keywords" is like "opiate^opiates^china". The keywords are joined together using "^".
     
 After generating the CSV file, put this file into the "dataset1000" folder. Meanwhile, "data-withoutID-2.csv" in each code should be replaced by the name you give for your own file.
+
+# Team
+The code was developed mostly by my former student Yuchen Wang. Other students (Zhengyu Fang and Wei Du) also contributed to the code. 
