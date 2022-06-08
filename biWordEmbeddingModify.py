@@ -81,7 +81,7 @@ def getEmbeddingMatrix(t, embeddingDim): #laad GLoVe embedding and establish wor
     vocab_size = len(t.word_index) + 1
     filedir = "embedding_glove\glove.6B." + str(embeddingDim) + "d.txt"
     embeddings_index = dict()
-    #f = open('/home/yuchen/PycharmProjects/PRAW/venv/src/embedding_glove/glove.6B/glove.6B.100d.txt')
+    
     f = open(filedir, encoding='utf-8')
     for line in f:
         values = line.split()
