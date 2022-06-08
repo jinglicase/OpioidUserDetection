@@ -1,4 +1,4 @@
-			Detection of Opioid Users from Reddit Posts via an Attention-based Bidirectional Recurrent Neural Network
+			# Detection of Opioid Users from Reddit Posts via an Attention-based Bidirectional Recurrent Neural Network
 
 Quick Start
 
