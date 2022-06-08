@@ -265,7 +265,7 @@ def test(max_length, embeddingDim, t, padded_docs, Y, embedding_matrix, flag):
 
 def main():
     scriptDir = os.path.dirname(__file__)
-    inputFile = os.path.join(scriptDir, "dataCollection/dataset1000_building/data-withoutID.csv")
+    inputFile = os.path.join(scriptDir, "dataCollection/data-withoutID.csv")
     print("Fine 1")
     max_length = 100 #the max length of the sentence
     embeddingDim = 200 #the dimension of word vectors
