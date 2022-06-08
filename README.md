@@ -1,6 +1,19 @@
 # Detection of Opioid Users from Reddit Posts via an Attention-based Bidirectional Recurrent Neural Network
 
+## Introduction
+
+This is a companion site for our paper entitled "Detection of Opioid Users from Reddit Posts via an Attention-based Bidirectional Recurrent Neural Network". The primary purposes of this site are to 1) provide the manually labeled dataset used in the paper, and 2) provide code used in generating the results in the paper.  
+
+## Dataset
+
+Our data was collected from Reddit using Python Reddit API Wrapper (PRAW), a web crawling tool. The data was obtained from three subreddits called 'Opiates', 'OpiatesRecovery', and 'Drugs'. For each subreddit, we collected the comments of redditors who were in the "Top-Month" tab from January 6th 2020 to February 5th 2020. The collection was based on opioid-related keywords (e.g., opium, opioid) as well as their slang words (e.g., black, chocolate). All comments from the same redditor were concatenated into one ``post'', representing the user. 
+
+The initial dataset had no labels. The label of each user/post was obtained manually by crowdsourcing with the help of 34 students in a data mining class. Each post was read by two students independently and was assigned to one of five possible labels. If the labels from the two students were the same, that label was used for the post/redditor. Otherwise, a third student read it again and provided her/his own result. The label with two votes was deemed the correct one. The five labels are: non-opioid users, opioid users, previous opioid users (who actually quit now),  drug dealers, and users who use prescription drugs. Their corresponding numbers of posts/redditors are  410, 471, 107,  27, 43, respectively. Because the total number of redditors in the last three categories was relatively small, in the current study, we only focused on the first two cases which contained 881 users (the file is dataCollection\data-withoutID-2.csv). 
+
+
 ## Quick Start
+
+To run the proposed models, make sure that you follow the steps below: 
 
 1. Ensure your Python version is above 3.0, Tensorflow (2.2.0), Keras (2.3.1).
 	
